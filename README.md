@@ -27,7 +27,7 @@ Before using this Qtile configuration, if you don't want to start configuring th
 - Zathura (PDF viewer, used for displaying keybindings, can be replaced with other PDF viewer) 📜
 - Rofi (application launcher and menu) 🚀
 - Thunar (file manager, can be replaced with your preferred file manager) 📂
-- Google Chrome (or any web browser of your choice) 🌐
+- Brave (or any web browser of your choice) 🌐
 - Visual Studio Code (or any code editor of your choice) 💻
 - Font Noto Sans font (used for widgets) ✒️
 - Font Lilex Nerd Font Mono Regular font (used for widgets) 🖋️

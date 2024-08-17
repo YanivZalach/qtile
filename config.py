@@ -289,6 +289,15 @@ screens = [
                                 mouse_callbacks={'Button1':lazy.spawn("kitty -e htop")}
                             ),
 
+                             # Bluetooth widget
+                             widget.TextBox(
+                                font="Noto Sans",
+                                text="Bth",
+                                padding = 2,
+                                fontsize=13,
+                                mouse_callbacks={'Button1':lazy.spawn("blueberry")}
+                            ),
+
                             # Custom TextBox widget for 'Net' (Network) text display
                             widget.TextBox(
                                 font="Noto Sans",
@@ -299,7 +308,7 @@ screens = [
                             # Net widget to display network interface information and launch connection editor on click
                             widget.Net(
                                 font="Noto Sans Bold",
-                                interface="enp2s0",#how to find it:   run in terminal: ifconfig, find the value
+                                interface="enp0s25",#how to find it:   run in terminal: ifconfig, find the value
                                 format="{down} ↓↑ {up}",
                                 padding = 7,
                                 mouse_callbacks={'Button1':lazy.spawn("nm-connection-editor")}
@@ -332,18 +341,19 @@ screens = [
                                 ),
 
                         # Commented out Battery widget (uncomment to use in a laptop)     
-                        #    widget.TextBox(# Widget to display text
-                        #        font="Noto Sans",
-                        #        text="Battery:",
-                        #        padding = 7,
-                        #        fontsize=13
-                        #   ),
-                        #   widget.Battery(# Battery widget to display battery status
-                        #       font="Noto Sans Bold",
-                        #       update_interval = 10,
-                        #       fontsize = 12,
-                        #       padding = 5,
-                        #   ),
+                            widget.TextBox(# Widget to display text
+                                font="Noto Sans",
+                                text="Bat:",
+                                padding = 7,
+                                fontsize=13
+                           ),
+                           widget.Battery(# Battery widget to display battery status
+                               font="Noto Sans Bold",
+                               format="{char}{percent:2.0%}",
+                               update_interval = 10,
+                               fontsize = 12,
+                               padding = 5,
+                           ),
 
                             # Sep widget to add a separator between widgets
                             widget.Sep(
