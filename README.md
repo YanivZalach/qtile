@@ -19,6 +19,7 @@ Before using this Qtile configuration, if you don't want to start configuring th
 
 - Qtile (of course!) 🪶
 - Python (required for Qtile configuration) 🐍
+- Arander and Autorandr for multi-monitor support ⚙️
 - Picom (to allow applications to be transparent) ✨
 - Amixer (to display and change volume in the widgets) 🎧
 - Kitty (terminal emulator, can be replaced with other terminal emulators) 🐱

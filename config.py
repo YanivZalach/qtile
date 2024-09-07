@@ -41,6 +41,9 @@ keys = [
     
     # Shutdown or reboot the PC using a custom bash script
     Key([mod, "shift"], "x", lazy.spawn(f'{home}/.config/qtile/bash_scripts/ro_sd.sh'), desc="Shutdown || Reboot"),
+
+    # Chose screen for the PC using a custom bash script
+    Key([mod, "shift"], "p", lazy.spawn(f'{home}/.config/qtile/bash_scripts/chose_screen.sh'), desc="Chose screen"),
     
     # Switch between US and IL keyboard layouts
     Key([alt],"shift_L",  lazy.widget["keyboardlayout"].next_keyboard(), desc="Keyboard layout (US || IL)"),

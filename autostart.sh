@@ -20,6 +20,7 @@ function run {
 
 
 picom --config $HOME/.config/qtile/picom.conf &
+autorandr --change &
 
 
 #starting user applications at boot time
